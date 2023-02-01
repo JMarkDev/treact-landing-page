@@ -19,7 +19,7 @@
 
 .logo__title{
     color: #343E63;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900;
     font-weight: 800;
     margin-left: 10px;
@@ -55,7 +55,7 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+.nav__link:hover{
     color: #6415ff;
     border-bottom: 2px solid #6415ff;
     padding: 0 0 4px;
@@ -97,7 +97,6 @@ header{
 .row{
     width: 100%;
     max-width: 1200px; 
-    max-width: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,33 +104,44 @@ header{
 
 .title{
     width: 500px;
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 300;
     color: #1a202c;
-    /* margin-top: -42px; */
+    margin-top: -32px;
 }
 span{
     color: #6415ff;
 }
 .landing__text{
     width: 40%;
-    margin-right: 300px;
-    margin-left: -70px;
+    margin: 50px;
 }
 
 .landing__img img{
+    box-sizing: border-box;
+   
+}
+.landing__img{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg);
+    max-width: 1300px;
     width: 100%;
-    max-width: 32rem;
-    height: 50vh;
-    border: 1px solid black;
-    box-sizing: border-box ;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+
 }
 
 .landing__para{
-    /* margin-top: 2rem;
-    margin-bottom: 2rem; */
+    width: 550px;
     margin: 32px 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #243e63;
     line-height: 1.5;
 }
@@ -147,22 +157,26 @@ span{
     background-color: #6415ff;
     font-size: 16px;
     padding: 16px 38px;
-    margin: 8px 0px 8px 200px;
+    margin: 8px 0px 8px 240px;
     border-radius: 50px;
     position: absolute;
     font-weight: 700;
 }
 
 input{
-    padding: 22px 192px 22px 32px;
-    margin-left: -50px;
+    padding: 22px 210px 22px 32px;
+    margin-left: -30px;
     background: #ffffff;
     border-radius: 50px;
     border: 2px solid #c4c4c4;
 }
 
+input[type=text]:focus{
+    outline: 2px solid  #6415ff;     /* oranges! yey */
+  }
+  
 input:hover{
-    border: 1 px solid #6415ff;
+    box-shadow: 0px 0px 3px#737373;
 }
 
 input::placeholder{
@@ -170,10 +184,21 @@ input::placeholder{
 }
 
 .trusted{
-    margin-top: 80px;
+    margin-top: 90px;
 }
+
 .trusted p{
     font-size: 12px;
     color: #a0aac0;
     font-weight: 700;
 }
+
+.trusted img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    padding: 0 64px 0 0;
+    margin: 16px 0 0;
+}
+
