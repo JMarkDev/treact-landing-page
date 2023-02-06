@@ -201,7 +201,9 @@ input::placeholder{
 .container__features{
     /* margin: 0 186.516px; */
     /* margin-top: 112px; */
-    padding: 96px 0px;
+    /* padding: 86px 0px; */
+    padding: 96px 0;
+    margin: 0 186.516px;
 }
 
 .features{
@@ -209,19 +211,20 @@ input::placeholder{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid black;
 }
 
 .features__title{
-    margin-top: 24px;
+    /* margin-top: 24px; */
     font-size: 16px;
     color: #6415ff;
+    /* padding-bottom: 1px; */
 }
 
 .service__title{
     font-size: 48px;
     font-weight: 900;
     color: #243e63;
+    padding: 16px;
 }
 
 .service__para{
@@ -231,5 +234,4 @@ input::placeholder{
     margin: 16px 0 0;
     text-align: center;
     line-height: 1.5;
-    padding-top: 28px;
 }
