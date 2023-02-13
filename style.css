@@ -82,7 +82,7 @@ a{
 .sign__up--link:hover{
     color: white;
     border-bottom: none;
-    padding: 12px 32px;
+    padding: 12px 34px;
     border-radius: 50px;
 }
 
@@ -109,12 +109,6 @@ header{
     /* border: 1px solid black; */
 }
 
-.landing__image{
-    width: 60%;
-    padding: 0 0 20px 20px;
-    
-}
-
 .title{
     font-size: 48px;
     font-weight: 700;
@@ -122,7 +116,7 @@ header{
     margin-top: 28px;
 }
 
-span{
+.purple{
     color: #6415ff;
 }
 
@@ -194,16 +188,21 @@ input::placeholder{
     margin: 16px 0 0;
 }
 
+.landing__img{
+    width: 60%;
+    /* padding: 0 0 20px 20px; */
+    padding: 0 0 50px 24px;
+    overflow: hidden;
+}
+
 .landing__image{
     width: 100%;
 }
 
+/* FEATURES==================================================================================================================================== */
 .container__features{
-    /* margin: 0 186.516px; */
-    /* margin-top: 112px; */
-    /* padding: 86px 0px; */
     padding: 96px 0;
-    margin: 0 186.516px;
+    margin: auto;
 }
 
 .features{
@@ -220,18 +219,193 @@ input::placeholder{
     /* padding-bottom: 1px; */
 }
 
-.service__title{
+.features__title--2{
     font-size: 48px;
     font-weight: 900;
     color: #243e63;
-    padding: 16px;
+    padding: 16px 0 0;
 }
 
-.service__para{
+.features__para{
     width: 600px;
     font-size: 18px;
     color: #7c8ba1;
-    margin: 16px 0 0;
+    margin: 16px 0 36px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 2;
+}
+
+.services__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0px 120px;
+    
+}
+
+.services{
+    display: flex;
+    box-sizing: border-box;
+    width: calc(100%/3);
+    /* margin: 16px 24px; */
+    padding: 32px 28px;
+}
+
+.services__description{
+    margin: -10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services__title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #243e63;
+    margin: 16px 0 0;
+}
+
+.services__para{
+    font-size: 16px;
+    margin: 16px 0 0;
+    color: #7c8ba1;
+    line-height: 2;
+}
+
+.description{
+    font-size: 16px;
+    margin: 16px 0 0;
+}
+
+.imgContainer img{
+    padding: 20px;
+    border: 1px solid #e0e5ee;
+    border-radius: 50px;
+}
+
+/* SERVICES===================================================================================================================================================== */
+
+.quality__work--container{
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 0;
+    
+}
+
+.quality__work{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quality__work span{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 32px 0 0;
+}
+
+.quality__work h2{
+    color: #243e63;
+    font-size: 48px;
+    margin: 16px 0 0;
+}
+
+.quality__work h2 span{
+    font-size: 48px;
+    margin: 16px 0 0 0;
+}
+
+.quality__work p{
+    color: #7c8ba1;
+    font-size: 18px;
+    margin: 16px 0 0;
+}
+
+.quality__btn{
+    font-size: 14px;
+    font-weight: 700;
+    color: #f7fafc;
+    background-color: #6415ff;
+    margin: 32px 0 0;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: none;
+    width: 145px;
+}
+
+.quality__img{
+    width: 50%;
+    overflow: hidden;
+}
+
+.quality__image{
+    width: 100%;
+}
+
+.container__steps{
+    display: flex;
+    padding: 96px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.steps__img{
+    width: 50%;
+}
+
+.steps__img img{
+    width: 100%;
+}
+
+.steps__123{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.steps__list{
+    display: flex;
+    flex-direction: column;
+    margin: 48px 0 0;
+}
+
+.steps__123 h5{
+    font-size: 16px;
+}
+
+.steps__123 h2{
+    color: #243e63;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 16px 0 0;
+}
+
+.numbers{
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.steps{
+    display: flex;
+    margin: 32px 0 0;
+    padding-right: 150px;
+}
+
+.step__by__step{
+    margin: 0 0 0 24px;
+}
+
+.step__by__step h6{
+    font-size: 20px;
+    color: #243e63;
+}
+
+.step__by__step p{
+    color: #718096;
+    margin: 12px 0 0;
+    font-size: 14px;
+    line-height: 2;
 }
