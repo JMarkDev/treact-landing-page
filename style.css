@@ -8,7 +8,11 @@
 
 
 body{
+<<<<<<< HEAD
     padding: 34px;
+=======
+    padding: 32px;
+>>>>>>> ae88bad89b299d0773c18b5fb671f2f6307b32e2
 }
 
 .logo{
@@ -38,6 +42,7 @@ body{
 
 nav{
     /* height: 88px; */
+    height: 100px;
     width: 100%;
 }
 
@@ -65,6 +70,7 @@ a{
     font-size: 14px;
     margin: 0 24px;
     padding: 0 0 4px;
+    padding: 0 0 24px;
 }
 
 .login__link{
@@ -89,6 +95,9 @@ a{
 header{
     height: 100vh;
     padding-bottom: 100px;
+
+    height: calc(100vh - 100px);
+
 }
 
 .row{
@@ -127,6 +136,7 @@ header{
     color: #243e63;
     line-height: 1.5;
 }
+<<<<<<< HEAD
 
 .search{
     display: flex;
@@ -187,6 +197,97 @@ input::placeholder{
     padding: 0 64px 0 0;
     margin: 16px 0 0;
 }
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    padding: 24px 232px 24px 28px;
+    background: #ffffff;
+    border-radius: 50px;
+    border: 2px solid #c4c4c4;
+}
+
+input[type=text]:focus{
+    outline: 2px solid  #6415ff;  
+}
+  
+input:hover{
+    box-shadow: 0px 0px 3px#737373;
+}
+
+input::placeholder{
+    font-size: 16px;
+    color: #a0aac0;
+    font-weight: 400;
+}
+
+.search__btn{
+    color: #f7fafc;
+    background-color: #6415ff;
+    font-size: 16px;
+    padding: 16px 40px;
+    margin: 8px 8px 8px 0;
+    margin-left: 268px;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    font-weight: 700;
+}
+
+
+.trusted{
+    margin-top: 90px;
+}
+
+.trusted__para{
+    font-size: 12px;
+    color: #a0aac0;
+    font-weight: 700;
+}
+ 
+.trusted__img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    padding: 0 64px 0 0;
+    margin: 16px 0 0;
+}
+/* 
+
+
+
+
+.landing__img{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg);
+    max-width: 1300px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+
+ */
 
 .landing__img{
     width: 60%;
