@@ -8,8 +8,8 @@
 }
 
 
-body{
-    padding: 32px;
+section{
+    padding: 0 32px;
 }
 
 .span{
@@ -49,6 +49,7 @@ nav{
     /* height: 88px; */
     /* height: 100px; */
     width: 100%;
+    padding-top: 32px;
 }
 
 ul{
@@ -974,18 +975,18 @@ input::placeholder{
   }
 
   .developers__container{
-    background-color: #6415ff;
-    border-radius: 10px;
-    margin: 96px 0;
+    padding: 96px 0;
   }
 
   .developers{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 96px 0px;
-    margin: auto;
-    max-width: 1024px;
+    padding: 96px 132px;
+    /* margin: auto;
+    max-width: 1024px; */
+    background-color: #6415ff;
+    border-radius: 10px;
     
   }
   
@@ -1026,21 +1027,29 @@ input::placeholder{
 
   footer{
     background-color: #6415ff;
-    padding: 0;
-    margin: 0;
+    margin-top: 96px;
+    padding-top: 96px;
+    padding: 32px 32px 0 32px;
   }
+  
+  /* .link{
+    padding: 66px 0;
+  } */
 
   .links{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: -48px 0 0;
+    margin: 48px 0 0;
+    padding-bottom: 62px;
+    border-bottom: 2px solid #742cff;
   }
 
   .link h5{
     color: #f7fafc;
     font-size: 16px;
     font-weight: 700;
+    padding: 22px 0;
   }
 
   .link ul{
@@ -1055,6 +1064,10 @@ input::placeholder{
     padding: 0 0 4px;
   }
 
+  .footer__links a:hover{
+    border-bottom: 2px solid #f7fafc;
+  }
+
   .footer__links{
     padding: 5px  0;
   }
@@ -1063,6 +1076,8 @@ input::placeholder{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 62px;
+    padding-bottom: 96px;
   }
 
   .treact__inc{
@@ -1097,7 +1112,7 @@ input::placeholder{
     width: 2rem;
     height: 2rem;
     background-color: #f7fafc;
-    /* margin: 0 16px 0 0; */
+    color: #1a202c;
     margin-right: 1rem;
     padding: 8px;
     border-radius: 50%;
