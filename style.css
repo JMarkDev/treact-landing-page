@@ -208,7 +208,6 @@ a{
 
 .landing__img img{
     width: 100%;
-    max-width: 32rem;
 }
 
 .title{
@@ -367,7 +366,7 @@ input::placeholder{
 }
 
 .features__para{
-    width: 600px;
+    width: 100%;
     font-size: 18px;
     color: #7c8ba1;
     margin: 16px 0 36px;
@@ -676,7 +675,7 @@ input::placeholder{
     display: flex;
     justify-content:center; 
     align-items: center; 
-    width: 100%;
+    margin: auto;
   }
   
   .cards{
@@ -1215,6 +1214,8 @@ input::placeholder{
     .cards{
       width: 100%;
       max-width: 24rem;
+      margin-right: 0;
+      margin-left: 0;
     }
     
     
@@ -1405,8 +1406,6 @@ input::placeholder{
     }
 
     .trusted{
-      /* background-color: red; */
-      /* margin: 48px 0 0; */
       margin-top: 96px;
     }
 
@@ -1427,7 +1426,6 @@ input::placeholder{
 
     .quality__work--container{
       text-align: center;
-      /* flex-direction: column; */
       flex-direction: column-reverse;
     }
 
@@ -1528,7 +1526,6 @@ input::placeholder{
     .developers__btn{
       flex-direction: column;
       max-width: 32rem;
-      /* padding: 0; */
       margin-top: 1.5rem;
       text-align: center;
     }
