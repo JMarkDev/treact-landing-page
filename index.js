@@ -1,14 +1,36 @@
-console.log("hello world")
+function openMenu() {
+  document.body.classList += " menu--open "
+}
+
+function closeMenu() {
+  document.body.classList.remove('menu--open')
+}
 
 const arrows = document.querySelectorAll('.arrow');
 
 arrows.forEach(function(arrow) {
   arrow.addEventListener('click', function() {
     const answer = this.parentNode.parentNode.querySelector('.answer');
-    if (answer.style.display === 'none') {
-      answer.style.display = 'block';
+    const otherAnswers = document.querySelectorAll('.answer.visible');
+    
+    // close other visible answers
+    otherAnswers.forEach(function(otherAnswer) {
+      if (otherAnswer !== answer) {
+        otherAnswer.classList.remove('visible');
+        otherAnswer.style.display = 'none';
+        otherAnswer.parentNode.querySelector('.arrow').classList.remove('arrow--up');
+      }
+    });
+
+    // toggle the visibility of the clicked answer
+    answer.classList.toggle('visible');
+    answer.style.display = answer.classList.contains('visible') ? 'block' : 'none';
+
+    // toggle the arrow class
+    if (this.classList.contains('arrow--up')) {
+      this.classList.remove('arrow--up');
     } else {
-      answer.style.display = 'none';
+      this.classList.add('arrow--up');
     }
   });
 });
@@ -16,20 +38,8 @@ arrows.forEach(function(arrow) {
 const questions = document.querySelectorAll('.question');
 
 questions.forEach((question) => {
-  const arrow = question.querySelector('.arrow');
   const answer = question.querySelector('.answer');
 
-  arrow.addEventListener('click', () => {
-    if (answer.classList.contains('visible')) {
-      answer.classList.remove('visible');
-      arrow.classList.remove('arrow--up');
-    } else {
-      answer.classList.add('visible');
-      arrow.classList.add('arrow--up');
-    }
-  });
+  // hide the answer initially
+  answer.style.display = 'none';
 });
-
-
-
-

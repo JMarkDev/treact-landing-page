@@ -7,13 +7,10 @@
     <title>T-React Final Project</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8fc129ec61.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://kit.fontawesome.com/8fc129ec61.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/3d7fdb5ace.js" crossorigin="anonymous"></script> -->
 </head>
 <body>  
     <section class="landing__page">
         <nav>
-        <!-- <div class="row"> -->
             <div class="navbar">
                 <a href="#" class="logo">
                         <img src="./images/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="" class="img__logo">
@@ -27,6 +24,35 @@
                     <li><a href="#" class="nav__link login__link">Login</a></li>
                     <li><a href="#" class="nav__link sign__up--link">Sign Up</a></li>
                 </ul>
+<!-- NAV BARS -->
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop" onclick="closeMenu()">
+                    <button class="btn__menu btn__menu--close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__list hide__nav">
+                        <li>
+                        <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li>
+                        <a href="#" class="menu__link">Blog</a>
+                        </li>
+                        <li>
+                        <a href="#" class="menu__link">Pricing</a>
+                        </li>
+                        <li>
+                        <a href="#" class="menu__link">Contact Us</a>
+                        </li>
+                        <li>
+                        <a href="#" class="menu__link">Login</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link sign__up">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         <!-- </div> -->
         </nav>
@@ -93,7 +119,7 @@
 
                 <div class="services">
                     <div>
-                            <img class="services__img" src="../images/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="">
+                            <img class="services__img" src="./images/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="">
                     </div>
                     <div class="services__text">
                             <span class="services__title">Customizable</span>
@@ -160,7 +186,7 @@
     <section id="steps">
     <div class="container__steps">
         <div class="steps__img">
-                <img src="/images/hero-screenshot-2.png" alt="screenshot-2">
+                <img src="./images/hero-screenshot-2.png" alt="screenshot-2">
         </div>
         <div class="steps__123">
             <h5>
@@ -235,7 +261,7 @@
                 </a>
             </div>
             <div class="values__img">
-                <img src="/images/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="">
+                <img src="./images/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="">
             </div>
         </div>
     </section>
