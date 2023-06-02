@@ -2,6 +2,8 @@ function openMenu() {
   document.body.classList += " menu--open "
 }
 
+console.log('seroy cute');
+
 function closeMenu() {
   document.body.classList.remove('menu--open')
 }
